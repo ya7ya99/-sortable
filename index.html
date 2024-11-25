@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sortable</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="fetch.js"></script>
+</head>
+<body class="flex">
+
+    <center>
+        <select id="select">
+            <option value="10">10</option>
+            <option selected value="20">20</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+            <option value="all">all</option>
+        </select>
+        <input type="text" id="search" placeholder="search for a hero">
+    </center>
+
+    <div class="flex">
+        <table id="mytable"></table>
+    </div>
+
+    <div class="pagination flex">
+        <p class="last"><<</p>
+        <p class="prev"><</p>
+        <p class="page">1</p>
+        <p class="next">></p>
+        <p class="max">>></p>
+    </div>
+    
+</body>
+</html>

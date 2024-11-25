@@ -1,0 +1,143 @@
+/*===============================
+    Main style
+=================================*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--red);
+}
+
+/*===============================
+    color variables
+=================================*/
+
+:root {
+    --black1: #222;
+    --white: whitesmoke;
+    --red: #681c1c;
+}
+
+/*===============================
+    Body style
+=================================*/
+
+
+body {
+    min-height: 100vh;
+    flex-direction: column;
+    background: linear-gradient(150deg, var(--black1), var(--red));
+    color: #333;
+}
+
+/*===============================
+    table style
+=================================*/
+table {
+    width: 95%;
+    min-width: 95%;
+    border-collapse: collapse;
+    font-size: 15px;
+    background-color: inherit;
+    border-radius: 8px;
+    color: white;
+}
+
+thead th {
+    border-bottom: 1px solid var(--red);
+    font-weight: bold;
+    background-color: #f3f3f3;
+    color: #333;
+}
+
+th,
+td {
+    padding: 20px;
+    border: 3px dashed var(--red);
+    text-align: left;
+    margin: 10px;
+}
+
+tr:hover {
+    opacity: 0.8;
+}
+
+table img {
+    height: 200px;
+    width: auto;
+    border-radius: 5px;
+}
+
+/*===============================
+    Inputs style
+=================================*/
+
+select,
+input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid var(--red);
+    outline: none;
+    background-color: var(--red);
+    transition: border-color 0.3s ease;
+    color: white;
+}
+
+select:hover,
+input:hover {
+    border-color: #888;
+}
+
+select {
+    margin: 20px;
+    width: 300px;
+}
+
+input[type="text"] {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+input:focus,
+select:focus {
+    border-color: #555;
+}
+
+/*===============================
+    Pagination style
+=================================*/
+
+.pagination {
+    justify-content: space-between;
+    margin: 30px;
+}
+
+.pagination p {
+    padding: 10px;
+    color: var(--white);
+    border: 1px solid var(--white);
+    cursor: pointer;
+    width: 100px;
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
